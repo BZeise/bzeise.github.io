@@ -1,19 +1,27 @@
-// Smooth Scroll on clicking nav items
-$('nav a').click(function () {
-  var $href = $(this).attr('href');
-  $('body').stop().animate({
-    scrollTop: $($href).offset().top
-  }, 1000);
-  return false;
-});
+$(onReady);
 
-// back to top
-$('#toTop a').click(function () {
-  $('body').animate({
-    scrollTop: 0
-  }, 1000);
-  return false;
-});
+function onReady() {
+  console.log('js loaded');
+
+  // Smooth Scroll on clicking nav items
+  $('nav a').click(function () {
+    console.log('clicked on it');
+    var $href = $(this).attr('href');
+    $('body').stop().animate({
+      scrollTop: $($href).offset().top
+    }, 1000);
+    return false;
+  });
+
+  // back to top
+  $('#toTop a').click(function () {
+    $('body').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  });
+}
+
 
 // Parallaxing + add class active on scroll
 $(document).scroll(function () {
@@ -35,12 +43,12 @@ $(document).scroll(function () {
 
   // changing padding of nav a on scroll
     if (scrollPos > 250) {
-      $('nav a').addClass('small');
-      $('nav img').addClass('move');
+      // $('nav a').addClass('small');
+      // $('nav img').addClass('move');
       $('nav span').removeClass('movetext');
     } else {
-      $('nav a').removeClass('small');
-      $('nav img').removeClass('move');
+      // $('nav a').removeClass('small');
+      // $('nav img').removeClass('move');
       $('nav span').addClass('movetext');
     }
 

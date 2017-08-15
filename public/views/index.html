@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/styles/styles.css">
 
   <!-- Scripts -->
+
+  <script src="vendors/jquery.min.js" charset="utf-8"></script>
   <script src="scripts/client.js" charset="utf-8"></script>
 
 </head>
@@ -16,69 +18,110 @@
 <body>
   <header>
     <nav>
-      <span class="movetext">Company Name</span>
-      <img class="" src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png">
-      <a href="#portion1" class="active">Portion1</a>
-      <a href="#portion2">Portion2</a>
-      <a href="#portion3">Portion3</a>
-      <a href="#portion4">Portion4</a>
+      <span class="movetext">Ben Zeise</span>
+      <!-- <img class="" src="../images/primeLogo.png"> -->
+      <!-- Replace image above and remove "small" class tags, then uncomment lines in client.js for original navbar functionality -->
+      <a href="#portion1" class="small active">Home</a>
+      <a href="#portion2" class="small">About Me</a>
+      <a href="#portion3" class="small">Projects</a>
+      <a href="#portion4" class="small">Hobbies</a>
     </nav>
   </header>
 
-  <div class="portion">
-    <h2>Portion 1.</h2>
+  <div class="portion" id="portion1">
+    <h2>Ben Zeise</h2>
   </div>
 
-  <div id="portion1" class="info">
-    <h3>Heading for Portion 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis ut dicta quisquam officia deleniti, amet. Obcaecati atque, cumque quae culpa ad hic commodi provident pariatur, iure nobis voluptatibus laborum amet temporibus quia, dolores veritatis,
-      repellendus consectetur. Ut ullam officiis minus quod assumenda facere quaerat, esse, magni, aliquid culpa vero.</p>
-    <div class="button">
-      <a href="#">Example Button</a>
+  <div class="info">
+    <h3>Hi.  Thanks for visiting.</h3>
+    <p>I'm a software developer with a focus on clean, fun design.  Currently looking for work in the Minneapolis area.</p>
+    <!-- <div class="button" id="toTop">
+      <a href="#">Back to Top</a>
+    </div> -->
+    <!-- <img class="img-circle" src="../images/ben.jpg" alt="me" width="400"/> -->
+    <div> <!-- begin image-and-text div -->
+      <div class="hobbyImg" style="float: left;">
+        <img src="../images/ben.jpg" alt="me" width="100%"/>
+      </div>
+      <div class="hobbyTxt" style="float: right;">
+          I'm a software developer with a focus on clean, fun design.  Currently looking for work in the Minneapolis area.
+      </div>
+      asd
+    </div> <!-- end image-and-text div -->
+
+  </div>
+
+  <div class="portion two" id="portion2">
+    <h2>About Me</h2>
+  </div>
+
+  <div class="info">
+    <h3>Software Education</h3>
+    <p>I graduate from Prime Digital Academy on 8/18/2017 with a Full Stack Software Engineering Certificate.  This site is built on JavaScript and jQuery,
+    but I also enjoy using AngularJS, Angular Material/Materialize, and Bootstrap for front-end and design work, in addition to Mongo DB, SQL with PostgreSQL,
+    Express, and Node.js for back-end server and database work.</p>
+    <h3>Previous Experience</h3>
+    <p>I graduated from the University of Minnesota - Twin Cities with a degree in Aerospace Engineering and Mechanics,
+    along with minors in Computer Science and Astronomy.  I spent five years working with Wells Fargo Home Mortgage.</p>
+    <!-- <div class="button" id="toTop">
+      <a href="#">Back to Top</a>
+    </div> -->
+  </div>
+
+  <div class="portion" id="portion3">
+    <h2>Skills</h2>
+  </div>
+
+  <div class="info">
+    <h3>Skills, Technologies Used</h3>
+    <p>Fill in this section with GitHub repos.  J/k not repos anymore.  List of skills.</p>
+    <!-- <div class="button" id="toTop">
+      <a href="#">Back to Top</a>
+    </div> -->
+  </div>
+
+  <div class="portion two" id="portion4">
+    <h2>Hobbies</h2>
+  </div>
+
+  <div class="info">
+    <h3>Hobbies</h3>
+
+    <div> <!-- begin image-and-text div -->
+      <div class="hobbyImg" style="float: left;">
+          <img src="../images/atKfai.jpg" alt="Bass on the Radio" width="100%"/>
+      </div>
+      <div class="hobbyTxt" style="float: right;">
+          In my spare time, I'm a musician, I play the bass guitar and I love funk and blues.  Here's a picture from when I got to play on KFAI radio.
+      </div>
+    </div> <!-- end image-and-text div -->
+
+    <div> <!-- begin image-and-text div -->
+      <div class="hobbyImg" style="float: right;">
+          <img src="../images/princessBride.jpg" alt="Beadsprites" width="100%"/>
+      </div>
+      <div class="hobbyTxt" style="float: left;">
+          I do some cosplay, here's me as Westley from the Princess Bride, with some help from a princess.
+      </div>
+    </div> <!-- end image-and-text div -->
+
+    <div> <!-- begin image-and-text div -->
+      <div class="hobbyImg" style="float: left;">
+          <img src="../images/beadspritesCooling.jpg" alt="Beadsprites" width="100%"/>
+      </div>
+      <div class="hobbyTxt" style="float: right;">
+          Here's a fun one:  I melted some beads to make old-school video game icons.
+      </div>
+    </div> <!-- end image-and-text div -->
+
+    <div class="button" id="toTop">
+      <a href="#">Back to Top</a>
     </div>
-  </div>
 
-  <div class="portion two">
-    <h2>Portion 2</h2>
-  </div>
+  </div> <!-- end info div -->
 
-  <div id="portion2" class="info">
-    <h3>Heading for Portion 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora pariatur voluptate laboriosam impedit praesentium sed, nihil, dignissimos et minima recusandae quaerat enim consectetur. Molestiae assumenda distinctio, rem nostrum dolores repellendus.</p>
-    <div class="button">
-      <a href="#">Example Button</a>
-    </div>
-  </div>
-
-  <div class="portion">
-    <h2>Portion 3.</h2>
-  </div>
-
-  <div id="portion3" class="info">
-    <h3>Heading for Portion 3.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusamus in vitae saepe harum soluta reiciendis eaque repellat distinctio quos voluptate nemo error ratione numquam, nisi quibusdam veritatis repudiandae ea possimus rerum pariatur dolores?
-      Optio inventore iusto, voluptatibus numquam aperiam, harum maxime beatae minima aliquam quas sapiente totam cumque unde..</p>
-    <div class="button">
-      <a href="#">Example Button</a>
-    </div>
-  </div>
-
-  <div class="portion two">
-    <h2>Portion 4.</h2>
-  </div>
-
-  <div id="portion4" class="info">
-    <h3>Heading for Portion 4.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni incidunt quos iste voluptates, tenetur ad repudiandae ea fuga eveniet quam, unde iure suscipit rem odit in, sint nulla itaque? Labore beatae, est voluptatibus saepe rerum illum repudiandae
-      quasi perspiciatis, molestiae quidem fugiat voluptates voluptate neque totam earum enim mollitia iure quod tempora veritatis quam optio. Error odit laudantium eum voluptate.</p>
-    <div class="button">
-      <a href="#">Example Button</a>
-    </div>
-  </div>
   <footer class="info">
-    <div id="toTop"><a href="#"><img src="http://www.superdruglookatme.com/wp-content/themes/superdrug/images/top.png"></a></div>
-    <p>&copy; 2014 Arif Hussain Bangash</p>
-
+    <p>&copy;Ben Zeise 2017</p>
   </footer>
 
 </body>
