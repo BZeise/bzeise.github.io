@@ -7,6 +7,12 @@ h3 {
   float:right;
 }
 
+.skillsImg {
+  height: 80px;
+  padding: 10px;
+  margin: auto;
+}
+
 /*.hobbyImg {
   width:35%;
   max-height: 10em;
@@ -22,9 +28,22 @@ h3 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 35% 60%;
   grid-gap: 15px;
   align-items: center;
+}
+
+.wrapper1 {
+  grid-template-columns: 35% 60%;
+}
+
+.wrapper2 {
+  grid-template-columns: 60% 35%;
+  margin-top: -60px;
+}
+
+.wrapper3 {
+  grid-template-columns: 55% 35%;
+  margin-top: -40px;
 }
 
 body {
