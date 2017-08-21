@@ -11,7 +11,7 @@ var port = process.env.PORT || 7878;
 
 // serve index.html file, since we don't have an index.js route
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/views/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // spin up server
