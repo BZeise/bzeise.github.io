@@ -117,6 +117,26 @@ header nav a:hover {
   color: #FFFAF0;
   background: #777;
 }
+.contactButton {
+  text-align: center;
+}
+.contactButton a {
+  display: inline-block;
+  /*border: 2px solid #777;*/
+  padding: .5em 1em;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: .15em;
+  word-spacing: .25em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.contactButton a:hover {
+  color: #FFFAF0;
+  background: #777;
+}
 footer.info {
   color: #FFFAF0;
   background: #777;
@@ -125,7 +145,7 @@ footer.info {
 }
 #toTop {
   clear:both;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 #toTop img {
   width: 50px;
