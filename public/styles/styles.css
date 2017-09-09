@@ -66,7 +66,7 @@ header nav a:hover {
 }
 
 .portion {
-  background-image:  url('../images/rikki-chan-122575-lookUp.jpg');
+  background-image: url('../images/rikki-chan-122581-lookDown.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -74,7 +74,7 @@ header nav a:hover {
   clear:both;
 }
 .portion.two {
-  background-image: url('../images/rikki-chan-122581-lookDown.jpg');
+  background-image:  url('../images/rikki-chan-122575-lookUp.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
