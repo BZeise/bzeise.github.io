@@ -139,7 +139,9 @@
 
 
 
-
+.projectTitle {
+  text-align: center;
+}
 
 h3 {
   margin-left: 1em;
