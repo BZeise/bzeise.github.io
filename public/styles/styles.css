@@ -1,8 +1,11 @@
+/*iHover CSS*/
+
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  /*z-index: 5000;*/
 }
 .ih-item,
 .ih-item * {
@@ -81,7 +84,7 @@
 }
 .ih-item.square.effect6 .info p {
   font-style: italic;
-  font-size: 12px;
+  font-size: 15px;
   position: relative;
   color: #bbb;
   padding: 20px 20px 20px;
@@ -141,6 +144,10 @@
 
 .projectTitle {
   text-align: center;
+}
+
+.projectTitle.spacing {
+  margin-top: 75px;
 }
 
 h3 {
