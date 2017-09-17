@@ -5,7 +5,6 @@
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
-  /*z-index: 5000;*/
 }
 .ih-item,
 .ih-item * {
@@ -140,7 +139,10 @@
 
 
 
-
+.lr {
+  width: 70%;
+  margin: auto;
+}
 
 .projectTitle {
   text-align: center;
@@ -336,7 +338,8 @@ nav span {
 .tooltip {
     position: relative;
     display: inline-block;
-    /*border-bottom: 1px dotted black; /* If you want dots under the hoverable text */*/
+    /* If you want dots under the hoverable text */
+    /*border-bottom: 1px dotted black; */
 }
 
 /* Tooltip text */
