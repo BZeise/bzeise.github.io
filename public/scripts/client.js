@@ -1,13 +1,13 @@
 $(onReady);
 
 function onReady() {
-  console.log('js loaded');
+  console.log('jq loaded');
 
   // Smooth Scroll on clicking nav items
   $('nav a').click(function () {
     console.log('clicked on it');
     var $href = $(this).attr('href');
-    $('body').stop().animate({
+    $('html,body').stop().animate({
       scrollTop: $($href).offset().top
     }, 1000);
     return false;
@@ -15,7 +15,7 @@ function onReady() {
 
   // back to top
   $('#toTop a').click(function () {
-    $('body').animate({
+    $('html,body').animate({
       scrollTop: 0
     }, 1000);
     return false;
