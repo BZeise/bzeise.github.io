@@ -6,4 +6,4 @@ Currently learning API Design with Node.JS and GraphQL... not sure how I'll impl
 
 Back at it.  I'll make this a bit of a journal.  Time to implement a mobile responsive design.  Yep!  Indeed! Woo!  Yeah!  Uh-huh!
 
-Woo son!  Green box!  Yep!  All of 'em!  Here's another!  lol.  haha.  again!  yep.
+Woo son!  Green box!  Yep!  All of 'em!  Here's another!  lol.  haha.  again!  yep.  lol
