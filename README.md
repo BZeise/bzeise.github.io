@@ -4,6 +4,11 @@ Thanks for coming to my website.  This site is built using only JavaScript, jQue
 
 Currently learning API Design with Node.JS and GraphQL... not sure how I'll implement that here :)
 
-Back at it.  I'll make this a bit of a journal.  Time to implement a mobile responsive design.  Yep!  Indeed! Woo!  Yeah!  Uh-huh!
+Back at it.  I'll make this a bit of a journal.  Time to implement a mobile responsive design.  Yep!
 
-Woo son!  Green box!  Yep!  All of 'em!  Here's another!  lol.  haha.  again!  yep.  lol.  heh.  woot
+## 7.19.23 --
+- Coming back to this.
+    - TODOs
+    - Check access
+    - Update resume available
+    - Update photo
