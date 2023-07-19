@@ -9,6 +9,12 @@ Back at it.  I'll make this a bit of a journal.  Time to implement a mobile resp
 ## 7.19.23 --
 - Coming back to this.
     - TODOs
-    - Check access
-    - Update resume available
-    - Update photo
+    - Check access -- Good.  Can update Github, but the page didn't update the resume immediately... hmm.
+    - Update resume available -- in progress
+    - Update photo -- in progress
+    - Update bio and essentials
+    - Update non-essential fun things (hobbies section)
+    - Optimize page
+        - Image loading
+        - Scrolling jitteriness
+    - What else?
