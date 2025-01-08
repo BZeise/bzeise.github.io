@@ -9,12 +9,18 @@ Back at it.  I'll make this a bit of a journal.  Time to implement a mobile resp
 ## 7.19.23 --
 - Coming back to this.
     - TODOs
-    - Check access -- Good.  Can update Github, but the page didn't update the resume immediately... hmm.
-    - Update resume available -- in progress
     - Update photo -- in progress
-    - Update bio and essentials
-    - Update non-essential fun things (hobbies section)
     - Optimize page
         - Image loading
         - Scrolling jitteriness
     - What else?
+    - Automate Copyright date
+    - Update About Me text
+    - Update Hobbies text
+    - Replace background image with something less hi-res and busy
+    - Remove Projects section
+    - Fix image optimization for different sizes
+    - Make image size display consistent
+    - reduce size of biggest images
+        - two backgrounds
+        - and beadsprites cooling
