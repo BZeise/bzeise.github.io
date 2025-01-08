@@ -225,15 +225,7 @@ header nav a:hover {
 }
 
 .portion {
-  background-image: url('../images/rikki-chan-122581-lookDown.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-  clear:both;
-}
-.portion.two {
-  background-image:  url('../images/rikki-chan-122575-lookUp.jpg');
+  background-image: url('../images/brandon-griggs-cGJfCHmjiso-unsplash.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
