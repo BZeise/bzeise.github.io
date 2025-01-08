@@ -1,227 +1,266 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ben Zeise Personal Site</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Ben Zeise Personal Site</title>
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="public/vendors/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="public/styles/styles.css" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="public/vendors/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="public/styles/styles.css">
+    <!-- Scripts -->
+    <script src="public/vendors/jquery.min.js" charset="utf-8"></script>
+    <script src="public/scripts/client.js" charset="utf-8"></script>
+  </head>
 
-  <!-- Scripts -->
-  <script src="public/vendors/jquery.min.js" charset="utf-8"></script>
-  <script src="public/scripts/client.js" charset="utf-8"></script>
+  <body>
+    <header>
+      <nav>
+        <span class="movetext">Ben Zeise</span>
+        <!-- <img class="" src="public/images/primeLogo.png"> -->
+        <!-- Replace image above and remove "small" class tags, then uncomment lines in client.js for original navbar functionality -->
+        <a href="#portion1" class="small active">Home</a>
+        <a href="#portion2" class="small">About Me</a>
+        <a href="#portion3" class="small">Projects</a>
+        <a href="#portion4" class="small">Skills</a>
+        <a href="#portion5" class="small">Hobbies</a>
+        <a href="#portion6" class="small">Contact</a>
+      </nav>
+    </header>
 
-</head>
-
-<body>
-  <header>
-    <nav>
-      <span class="movetext">Ben Zeise</span>
-      <!-- <img class="" src="public/images/primeLogo.png"> -->
-      <!-- Replace image above and remove "small" class tags, then uncomment lines in client.js for original navbar functionality -->
-      <a href="#portion1" class="small active">Home</a>
-      <a href="#portion2" class="small">About Me</a>
-      <a href="#portion3" class="small">Projects</a>
-      <a href="#portion4" class="small">Skills</a>
-      <a href="#portion5" class="small">Hobbies</a>
-      <a href="#portion6" class="small">Contact</a>
-    </nav>
-  </header>
-
-  <div class="portion" id="portion1">
-    <h2>Ben Zeise</h2>
-  </div>
-
-  <div class="info">
-    <div class="wrapper wrapper0">
-      <div>
-        <h3>Hi.  Thanks for visiting.</h3>
-        <p>I'm a software developer with a focus on clean, fun design.  Currently looking for work in the Minneapolis area.</p>
-      </div>
-      <div>
-        <img src="public/images/ben.jpg" class="img-circle" alt="me" />
-      </div>
-    </div>
-
-  </div>
-
-  <div class="portion two" id="portion2">
-    <h2>About Me</h2>
-  </div>
-
-  <div class="info">
-    <h3>Software Education</h3>
-    <p>I graduated from Prime Digital Academy with a Full Stack Software Engineering Certificate.</p>
-    <p>This site is built on JavaScript and jQuery,
-      but I also enjoy using AngularJS, Angular Material/Materialize, and Bootstrap for front-end and design work, in addition to Mongo DB, SQL with PostgreSQL,
-      Express, and Node.js for back-end server and database work.</p>
-      <h3>Previous Experience</h3>
-      <p>I earned a BS in Aerospace Engineering from UMN-Twin Cities, along with minors in Computer Science and Astronomy.
-        I also spent several years working in the financial industry with Wells Fargo Home Mortgage.</p>
-        <!-- <div class="button" id="toTop">
-        <a href="#">Back to Top</a>
-      </div> -->
-    </div> <!-- end info div -->
-
-    <div class="portion two" id="portion3">
-      <h2>Projects</h2>
+    <div class="portion" id="portion1">
+      <h2>Ben Zeise</h2>
     </div>
 
     <div class="info">
-
-      <h2 class="projectTitle">Abamath</h2>
-      <div class="ih-item square effect6 from_top_and_bottom"><a href="http://abamath-demo.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-        <div class="img"><img src="public/images/abacheck.png" alt="img"></div>
-
-        <div class="info">
-          <h3>Check-In App for Kids Coding Classes</h3>
-          <p>Full Stack web application made with MEAN stack and Angular Materialize.  Parents check in and out their kids using a PIN, can receive text notifications on checkout.
-            <!-- Currently in use, but you can visit demo by clicking here. -->
+      <div class="wrapper wrapper0">
+        <div>
+          <h3>Hi. Thanks for visiting.</h3>
+          <p>
+            I'm a software developer with a focus on clean, fun design.
+            Currently looking for work in the Minneapolis area.
           </p>
-        </div></a>
+        </div>
+        <div>
+          <img src="public/images/ben.jpg" class="img-circle" alt="me" />
+        </div>
       </div>
+    </div>
 
-      <h2 class="projectTitle spacing">Lightning Round</h2>
-      <div class="ih-item square effect6 from_top_and_bottom lr"><a href="https://lightninground.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-        <div class="img"><img src="public/images/lightningRound.png" alt="img"></div>
+    <div class="portion two" id="portion2">
+      <h2>About Me</h2>
+    </div>
 
-        <div class="info">
-          <h3>Multi-user Trivia Quiz Challenge</h3>
-          <p>Full Stack web application made with MEAN stack and Angular Material.  Leader sets options, starts quiz, others can take the same quiz.  Users can register and view tracked stats.
-          </p>
-        </div></a>
-      </div>
-
-    </div> <!-- end info div -->
+    <div class="info">
+      <h3>Software Education</h3>
+      <p>
+        I graduated from Prime Digital Academy with a Full Stack Software
+        Engineering Certificate.
+      </p>
+      <p>
+        This site is built on JavaScript and jQuery, but I also enjoy using
+        AngularJS, Angular Material/Materialize, and Bootstrap for front-end and
+        design work, in addition to Mongo DB, SQL with PostgreSQL, Express, and
+        Node.js for back-end server and database work.
+      </p>
+      <h3>Previous Experience</h3>
+      <p>
+        I earned a BS in Aerospace Engineering from UMN-Twin Cities, along with
+        minors in Computer Science and Astronomy. I also spent several years
+        working in the financial industry with Wells Fargo Home Mortgage.
+      </p>
+      <!-- <div class="button" id="toTop">
+        <a href="#">Back to Top</a>
+      </div> -->
+    </div>
+    <!-- end info div -->
 
     <div class="portion" id="portion4">
       <h2>Skills</h2>
     </div>
 
-    <div class="info" style="text-align: center;">
+    <div class="info" style="text-align: center">
       <!-- <h3>Skills, Technologies Used</h3> -->
       <div class="tooltip">
-        <img src="public/images/js.png" alt="JavaScript" class="skillsImg">
+        <img src="public/images/js.png" alt="JavaScript" class="skillsImg" />
         <span class="tooltiptext">JavaScript</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/jQuery.gif" alt="jQuery" class="skillsImg">
+        <img src="public/images/jQuery.gif" alt="jQuery" class="skillsImg" />
         <span class="tooltiptext">jQuery</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/angularJs.svg" alt="AngularJS" class="skillsImg tooltip">
+        <img
+          src="public/images/angularJs.svg"
+          alt="AngularJS"
+          class="skillsImg tooltip"
+        />
         <span class="tooltiptext">AngularJS</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/express.png" alt="Express" class="skillsImg">
+        <img src="public/images/express.png" alt="Express" class="skillsImg" />
         <span class="tooltiptext">Express</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/nodeJs.png" alt="Node.js" class="skillsImg">
+        <img src="public/images/nodeJs.png" alt="Node.js" class="skillsImg" />
         <span class="tooltiptext">Node.js</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/mongodb.svg" alt="MongoDB" class="skillsImg">
+        <img src="public/images/mongodb.svg" alt="MongoDB" class="skillsImg" />
         <span class="tooltiptext">MongoDB</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/meanstack.png" alt="MEAN Stack" class="skillsImg">
+        <img
+          src="public/images/meanstack.png"
+          alt="MEAN Stack"
+          class="skillsImg"
+        />
         <span class="tooltiptext">MEAN Stack</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/postgresql.png" alt="PostgreSQL" class="skillsImg">
+        <img
+          src="public/images/postgresql.png"
+          alt="PostgreSQL"
+          class="skillsImg"
+        />
         <span class="tooltiptext">PostgreSQL</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/html5.png" alt="HTML5" class="skillsImg">
+        <img src="public/images/html5.png" alt="HTML5" class="skillsImg" />
         <span class="tooltiptext">HTML5</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/css3.svg" alt="CSS3" class="skillsImg">
+        <img src="public/images/css3.svg" alt="CSS3" class="skillsImg" />
         <span class="tooltiptext">CSS3</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/angularJsMaterial.png" alt="AngularJS Material" class="skillsImg">
+        <img
+          src="public/images/angularJsMaterial.png"
+          alt="AngularJS Material"
+          class="skillsImg"
+        />
         <span class="tooltiptext">AngularJS Material</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/materialize.png" alt="Materialize" class="skillsImg">
+        <img
+          src="public/images/materialize.png"
+          alt="Materialize"
+          class="skillsImg"
+        />
         <span class="tooltiptext">Materialize</span>
       </div>
       <div class="tooltip">
-        <img src="public/images/bootstrap.png" alt="Bootstrap" class="skillsImg">
+        <img
+          src="public/images/bootstrap.png"
+          alt="Bootstrap"
+          class="skillsImg"
+        />
         <span class="tooltiptext">Bootstrap</span>
       </div>
       <!-- <div class="button" id="toTop">
       <a href="#">Back to Top</a>
     </div> -->
-  </div> <!-- end info div -->
+    </div>
+    <!-- end info div -->
 
-  <div class="portion two" id="portion5">
-    <h2>Hobbies</h2>
-  </div>
-
-  <div class="info">
-    <div class="wrapper wrapper1">
-      <div>
-        <img src="public/images/atKfai.jpg" alt="Bass on the Radio" width="100%"/>
-      </div>
-      <div>
-        In my spare time, I'm a musician, I play the bass guitar and I love funk and blues.  Here's a picture from when I got to play on KFAI radio.
-      </div>
+    <div class="portion two" id="portion5">
+      <h2>Hobbies</h2>
     </div>
 
-    <div class="wrapper wrapper2">
-      <div>
-        I do some cosplay.  Here's me as Westley from the Princess Bride, with some help from a princess.
+    <div class="info">
+      <div class="wrapper wrapper1">
+        <div>
+          <img
+            src="public/images/atKfai.jpg"
+            alt="Bass on the Radio"
+            width="100%"
+          />
+        </div>
+        <div>
+          In my spare time, I'm a musician, I play the bass guitar and I love
+          funk and blues. Here's a picture from when I got to play on KFAI
+          radio.
+        </div>
       </div>
-      <div>
-        <img src="public/images/princessBride.jpg" alt="Beadsprites" width="100%"/>
+
+      <div class="wrapper wrapper2">
+        <div>
+          I do some cosplay. Here's me as Westley from the Princess Bride, with
+          some help from a princess.
+        </div>
+        <div>
+          <img
+            src="public/images/princessBride.jpg"
+            alt="Beadsprites"
+            width="100%"
+          />
+        </div>
+      </div>
+
+      <div class="wrapper wrapper3">
+        <div>
+          <img
+            src="public/images/beadspritesCooling.jpg"
+            alt="Beadsprites"
+            width="100%"
+          />
+        </div>
+        <div>
+          Here's a fun one: I melted some beads to make old-school video game
+          icons, along with a friendly brain slug.
+        </div>
       </div>
     </div>
+    <!-- end info div -->
 
-    <div class="wrapper wrapper3">
-      <div>
-        <img src="public/images/beadspritesCooling.jpg" alt="Beadsprites" width="100%"/>
-      </div>
-      <div>
-        Here's a fun one:  I melted some beads to make old-school video game icons, along with a friendly brain slug.
-      </div>
+    <div class="portion" id="portion6">
+      <h2>Contact</h2>
     </div>
 
-  </div> <!-- end info div -->
+    <div class="info" style="text-align: center">
+      <!-- <h3>Find me at:</h3> -->
+      <span class="contactButton" id="">
+        <a
+          href="https://github.com/BZeise"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-github fa-fw"></i>GitHub</a
+        >
+      </span>
+      <span class="contactButton" id="">
+        <a
+          href="https://www.linkedin.com/in/ben-zeise/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i
+          >LinkedIn</a
+        >
+      </span>
+      <span class="contactButton" id="">
+        <a
+          href="public/docs/BenZeiseResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa fa-file-text fa-fw" aria-hidden="true"></i>Resume</a
+        >
+      </span>
+      <span class="contactButton" id="">
+        <a href="mailto:ben.zeise@gmail.com"
+          ><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>Email Me</a
+        >
+      </span>
 
-  <div class="portion" id="portion6">
-    <h2>Contact</h2>
-  </div>
-
-  <div class="info" style="text-align: center;">
-    <!-- <h3>Find me at:</h3> -->
-    <span class="contactButton" id="">
-      <a href="https://github.com/BZeise" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-fw"></i>GitHub</a>
-    </span>
-    <span class="contactButton" id="">
-      <a href="https://www.linkedin.com/in/ben-zeise/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i>LinkedIn</a>
-    </span>
-    <span class="contactButton" id="">
-      <a href="public/docs/BenZeiseResume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-text fa-fw" aria-hidden="true"></i>Resume</a>
-    </span>
-    <span class="contactButton" id="">
-      <a href="mailto:ben.zeise@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>Email Me</a>
-    </span>
-
-    <div class="button" id="toTop">
-      <a href="#">Back to Top</a>
+      <div class="button" id="toTop">
+        <a href="#">Back to Top</a>
+      </div>
     </div>
+    <!-- end info div -->
 
-  </div> <!-- end info div -->
-
-  <footer class="info">
-    <p>&copy;Ben Zeise 2025</p>
-  </footer>
-
-</body>
-
+    <footer class="info">
+      <p>&copy;Ben Zeise 2025</p>
+    </footer>
+  </body>
 </html>
