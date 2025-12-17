@@ -1,194 +1,6 @@
-/*iHover CSS*/
-
-.ih-item {
-  position: relative;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.ih-item,
-.ih-item * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.ih-item a {
-  color: #333;
-}
-.ih-item a:hover {
-  text-decoration: none;
-}
-.ih-item img {
-  width: 100%;
-  height: 100%;
-}
-
-.ih-item.square {
-  position: relative;
-  /*width: 316px;
-  height: 216px;*/
-  border: 8px solid #fff;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-.ih-item.square .info {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.ih-item.square.effect6 {
-  overflow: hidden;
-}
-.ih-item.square.effect6.colored .info {
-  background: #1a4a72;
-  background: rgba(26, 74, 114, 0.6);
-}
-.ih-item.square.effect6.colored .info h3 {
-  background: rgba(12, 34, 52, 0.6);
-}
-.ih-item.square.effect6 .img {
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.ih-item.square.effect6 .info {
-  background: #333333;
-  background: rgba(0, 0, 0, 0.6);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.ih-item.square.effect6 .info h3 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  font-size: 17px;
-  padding: 10px;
-  background: #111111;
-  margin: 30px 0 0 0;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.ih-item.square.effect6 .info p {
-  font-style: italic;
-  font-size: 15px;
-  position: relative;
-  color: #bbb;
-  padding: 20px 20px 20px;
-  text-align: center;
-  -webkit-transition: all 0.35s 0.1s linear;
-  -moz-transition: all 0.35s 0.1s linear;
-  transition: all 0.35s 0.1s linear;
-}
-.ih-item.square.effect6 a:hover .img {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.ih-item.square.effect6 a:hover .info {
-  visibility: visible;
-  opacity: 1;
-}
-
-.ih-item.square.effect6.from_top_and_bottom .info h3 {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.ih-item.square.effect6.from_top_and_bottom .info p {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.ih-item.square.effect6.from_top_and_bottom a:hover .info h3,
-.ih-item.square.effect6.from_top_and_bottom a:hover .info p {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.lr {
-  width: 70%;
-  margin: auto;
-}
-
-.projectTitle {
-  text-align: center;
-}
-
-.projectTitle.spacing {
-  margin-top: 75px;
-}
-
-h3 {
-  margin-left: 1em;
-}
-
-.img-circle {
-  border-radius: 30%;
-  /* float:right; */
-}
-
-.skillsImg {
-  height: 80px;
-  padding: 10px;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 15px;
-  align-items: center;
-}
-
-.wrapper0 {
-  grid-template-columns: auto 180px;
-}
-
-.wrapper1 {
-  grid-template-columns: 35% 60%;
-}
-
-.wrapper2 {
-  grid-template-columns: 60% 35%;
-  margin-top: -60px;
-}
-
-.wrapper3 {
-  grid-template-columns: 55% 35%;
-  margin-top: -40px;
-}
+/* ==================== */
+/* Base Styles */
+/* ==================== */
 
 body {
   margin: 0;
@@ -197,124 +9,42 @@ body {
   font-size: 20px;
 }
 
+h3 {
+  margin-left: 1em;
+}
+
+/* ==================== */
+/* Header & Navigation */
+/* ==================== */
+
 header nav {
   text-align: right;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 1em;
   position: fixed;
   width: 100%;
   z-index: 2;
 }
+
 header nav a {
   color: inherit;
   text-decoration: none;
   display: inline-block;
-  padding: 2em 1em .5em;
-  -webkit-transition: all .3s ease-in;
+  padding: 2em 1em 0.5em;
+  transition: all 0.3s ease-in;
 }
-.small {
-  padding: .5em 1em;
-}
+
 header nav a:hover {
   text-decoration: underline;
 }
 
+.small {
+  padding: 0.5em 1em;
+}
+
 .active {
-  background: rgba(255,255,255,0.3);
-}
-
-.portion {
-  background-image: url('../images/brandon-griggs-cGJfCHmjiso-unsplash.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-  clear:both;
-}
-.portion h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 3em;
-  padding: 2em 0;
-  margin: 0;
-  text-shadow: 0 0 10px black;
-  background: rgba(0,0,0,0.6);
-}
-
-.info {
-  background: #FFFAF0;
-  color: #777;
-  padding: 3em 20%;
-}
-
-.button {
-  text-align: center;
-}
-.button a {
-  display: inline-block;
-  border: 2px solid #777;
-  padding: .75em 1.5em;
-  color: #777;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 5px;
-  letter-spacing: .15em;
-  word-spacing: .25em;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-.button a:hover {
-  color: #FFFAF0;
-  background: #777;
-}
-.contactButton {
-  text-align: center;
-}
-.contactButton a {
-  display: inline-block;
-  /*border: 2px solid #777;*/
-  padding: .5em 1em;
-  color: #777;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 5px;
-  letter-spacing: .15em;
-  word-spacing: .25em;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-.contactButton a:hover {
-  color: #FFFAF0;
-  background: #777;
-}
-footer.info {
-  color: #FFFAF0;
-  background: #777;
-  text-align: center;
-  padding: .1em 20%;
-}
-#toTop {
-  clear:both;
-  margin-top: 3em;
-}
-#toTop img {
-  width: 50px;
-}
-#toTop img:hover {
-  cursor: pointer;
-}
-nav img {
-  z-index: 1000;
-  height: 2.5em;
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  transition: all 0.5s linear;
-}
-
-.move {
-  top: -60px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 nav span {
@@ -329,51 +59,304 @@ nav span {
   top: -30px;
 }
 
+/* ==================== */
+/* Section Backgrounds */
+/* ==================== */
+
+.portion {
+  background: url("../images/brandon-griggs-cGJfCHmjiso-unsplash.jpg") center center fixed;
+  background-size: cover;
+  text-align: center;
+  clear: both;
+}
+
+.portion h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 3em;
+  padding: 2em 0;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ==================== */
+/* Content Sections */
+/* ==================== */
+
+.info {
+  background: #fffaf0;
+  color: #777;
+  padding: 3em 20%;
+}
+
+/* ==================== */
+/* Home Section */
+/* ==================== */
+
+.wrapper {
+  display: grid;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.wrapper0 {
+  grid-template-columns: auto 180px;
+}
+
+.img-circle {
+  border-radius: 30%;
+}
+
+/* ==================== */
+/* Skills Section */
+/* ==================== */
+
+.skillsImg {
+  height: 80px;
+  padding: 10px;
+}
 
 /* Tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
-    /* If you want dots under the hoverable text */
-    /*border-bottom: 1px dotted black; */
+  position: relative;
+  display: inline-block;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 1s;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 /* Tooltip arrow */
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==================== */
+/* Hobbies Slideshow */
+/* ==================== */
+
+.slideshow-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #e8e8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-slide {
+  display: none;
+  position: relative;
+}
+
+.hobby-slide.active {
+  display: block;
+}
+
+/* Default layout - vertical (image on top, caption below) */
+.hobby-slide figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 2em 5em;
+  min-height: 500px;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+/* Horizontal layout for tall images (portrait orientation) */
+.hobby-slide.portrait figure {
+  flex-direction: row;
+  gap: 2em;
+  padding: 2em 6em;
+}
+
+.hobby-slide figure img {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* For portrait layout, limit image width */
+.hobby-slide.portrait figure img {
+  max-width: 45%;
+  flex-shrink: 0;
+}
+
+/* Figcaption styles */
+.hobby-slide figcaption,
+figcaption {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.hobby-slide figcaption {
+  color: #555;
+  max-width: 600px;
+}
+
+figcaption {
+  line-height: 1.5;
+  color: #777;
+}
+
+/* For portrait layout, align caption text to left and expand */
+.hobby-slide.portrait figcaption {
+  text-align: left;
+  max-width: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation buttons */
+.slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #777;
+  font-size: 24px;
+  padding: 1em 0.75em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.slide-nav:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.slide-nav.prev {
+  left: 20px;
+}
+
+.slide-nav.next {
+  right: 20px;
+}
+
+/* Slide indicators */
+.slide-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(119, 119, 119, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator:hover {
+  background: rgba(119, 119, 119, 0.8);
+}
+
+.indicator.active {
+  background: #777;
+  transform: scale(1.2);
+}
+
+/* ==================== */
+/* Contact & Buttons */
+/* ==================== */
+
+.contactButton,
+.button {
+  text-align: center;
+}
+
+.contactButton a,
+.button a {
+  display: inline-block;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 0.15em;
+  word-spacing: 0.25em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactButton a {
+  padding: 0.5em 1em;
+}
+
+.button a {
+  border: 2px solid #777;
+  padding: 0.75em 1.5em;
+}
+
+.contactButton a:hover,
+.button a:hover {
+  color: #fffaf0;
+  background: #777;
+}
+
+#toTop {
+  clear: both;
+  margin-top: 3em;
+}
+
+/* ==================== */
+/* Footer */
+/* ==================== */
+
+footer.info {
+  color: #fffaf0;
+  background: #777;
+  text-align: center;
+  padding: 0.1em 20%;
 }
