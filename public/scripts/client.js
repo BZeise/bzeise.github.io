@@ -114,9 +114,9 @@ function initSlideshow() {
 // Parallaxing + add class active on scroll
 $(document).scroll(function () {
 
-  // parallaxing
-  var $movebg = $(window).scrollTop() * -0.3;
-  $('.portion').css('background-positionY', ($movebg) + 'px');
+  // parallaxing - DISABLED (conflicts with background-attachment: fixed)
+  // var $movebg = $(window).scrollTop() * -0.3;
+  // $('.portion').css('background-positionY', ($movebg) + 'px');
 
   // add class active to nav a on scroll
   var scrollPos = $(document).scrollTop() + 100;
