@@ -87,7 +87,7 @@ nav span {
   color: white;
   font-weight: normal;
   font-size: 3em;
-  padding: 2em 0;
+  padding: 1.2em 0;
   margin: 0;
   text-shadow: 0 0 10px black;
   background: rgba(0, 0, 0, 0.6);
@@ -104,7 +104,7 @@ nav span {
 .info {
   background: #f5f5f0;
   color: #777;
-  padding: 3em 20%;
+  padding: 2em 20%;
 }
 
 /* ==================== */
@@ -115,7 +115,7 @@ nav span {
   font-family: 'Bernier', sans-serif;
   font-size: 5em;
   letter-spacing: 0.05em;
-  padding: 1em 0 0.2em 0;
+  padding: 0.6em 0 0.2em 0;
   margin: 0;
 }
 
@@ -153,12 +153,14 @@ nav span {
 
 .home-photo {
   display: block;
-  margin: 0 auto 2em auto;
+  margin: 0 auto 1em auto;
   max-width: 180px;
 }
 
 .img-circle {
-  border-radius: 30%;
+  border-radius: 5%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ==================== */
@@ -407,7 +409,17 @@ figcaption {
 
 #toTop {
   clear: both;
-  margin-top: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+#toTop a {
+  margin: 0;
+}
+
+/* Reduce padding for the back to top section */
+.info:has(#toTop) {
+  padding: 1.5em 20%;
 }
 
 /* ==================== */
@@ -525,7 +537,7 @@ footer.info {
   /* Section headers */
   .portion h2 {
     font-size: 2.5em;
-    padding: 1.5em 0;
+    padding: 1em 0;
   }
 
   /* Home section */
@@ -635,8 +647,11 @@ footer.info {
 
   /* Home section */
   #home h2 {
-    font-size: 2em;
-    padding: 1.5em 0 0.2em 0;
+    display: none;
+  }
+
+  #home {
+    padding-top: 4em;
   }
 
   .home-subtitle {
@@ -660,7 +675,7 @@ footer.info {
   .home-contact-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 0.75em;
+    gap: 0.5em;
   }
 
   .contactButton {
