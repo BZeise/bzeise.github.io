@@ -7,8 +7,12 @@ function onReady() {
   $('nav a').click(function () {
     // console.log('clicked on it');
     var $href = $(this).attr('href');
+    var navHeight = $('nav').outerHeight();
+    // Subtract section padding to get 10px between nav bottom and text top
+    var sectionPadding = $href === '#home' ? 0 : parseInt($($href + ' h2').css('padding-top'));
+    var offset = $href === '#home' ? 0 : navHeight + 10 - sectionPadding;
     $('html,body').stop().animate({
-      scrollTop: $($href).offset().top
+      scrollTop: $($href).offset().top - offset
     }, 1000);
     return false;
   });
@@ -120,14 +124,21 @@ $(document).scroll(function () {
 
   // add class active to nav a on scroll
   var scrollPos = $(document).scrollTop() + 100;
-  $('nav a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('nav a').removeClass("active");
-      currLink.addClass("active");
-    }
-  });
+
+  // If at the top of the page, activate home link
+  if ($(document).scrollTop() < 50) {
+    $('nav a').removeClass("active");
+    $('nav a[href="#home"]').addClass("active");
+  } else {
+    $('nav a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('nav a').removeClass("active");
+        currLink.addClass("active");
+      }
+    });
+  }
 
   // changing padding of nav a on scroll
     if (scrollPos > 250) {
