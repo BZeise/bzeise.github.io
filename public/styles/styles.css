@@ -436,3 +436,70 @@ footer.info {
   text-align: center;
   padding: 0.1em 20%;
 }
+
+/* ==================== */
+/* Construction Badge */
+/* ==================== */
+
+.construction-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: help;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  color: #777;
+}
+
+.construction-badge:hover {
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.construction-badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.construction-tooltip {
+  visibility: hidden;
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1001;
+  bottom: 50px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.75em;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.construction-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.construction-badge:hover .construction-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
