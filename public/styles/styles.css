@@ -138,40 +138,17 @@ nav span {
   text-shadow: 0 0 10px black;
 }
 
-/* Responsive font sizing for smaller screens */
-@media (max-width: 768px) {
-  #home h2 {
-    font-size: 3em;
-    padding: 1.2em 0 0.2em 0;
-  }
-
-  .home-subtitle {
-    font-size: 1.2em;
-  }
-
-  .home-experience {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  #home h2 {
-    font-size: 2em;
-    padding: 1.5em 0 0.2em 0;
-  }
-
-  .home-subtitle {
-    font-size: 1em;
-    letter-spacing: 0.05em;
-  }
-
-  .home-experience {
-    font-size: 0.9em;
-  }
-}
-
 .home-contact {
   text-align: center;
+}
+
+.home-contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .home-photo {
@@ -264,7 +241,7 @@ nav span {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 2em 5em;
+  padding: 2em 3em;
   min-height: 500px;
   justify-content: center;
   gap: 1.5em;
@@ -274,7 +251,7 @@ nav span {
 .hobby-slide.portrait figure {
   flex-direction: row;
   gap: 2em;
-  padding: 2em 6em;
+  padding: 2em 3em;
 }
 
 .hobby-slide figure img {
@@ -335,6 +312,13 @@ figcaption {
   transition: all 0.3s ease;
   z-index: 10;
   border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideshow-container:hover .slide-nav {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .slide-nav:hover {
@@ -502,4 +486,261 @@ footer.info {
 .construction-badge:hover .construction-tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/* ==================== */
+/* Responsive Design */
+/* ==================== */
+
+/* Tablet and smaller (768px and below) */
+@media (max-width: 768px) {
+  /* Reduce base font size */
+  body {
+    font-size: 18px;
+  }
+
+  /* Navigation adjustments */
+  header nav {
+    font-size: 0.9em;
+  }
+
+  header nav a {
+    padding: 0.75em 0.5em;
+  }
+
+  nav span {
+    left: 20px;
+    font-size: 0.9em;
+  }
+
+  /* Info section padding - reduce side padding */
+  .info {
+    padding: 2.5em 10%;
+  }
+
+  footer.info {
+    padding: 0.5em 10%;
+  }
+
+  /* Section headers */
+  .portion h2 {
+    font-size: 2.5em;
+    padding: 1.5em 0;
+  }
+
+  /* Home section */
+  #home h2 {
+    font-size: 3em;
+    padding: 1.2em 0 0.2em 0;
+  }
+
+  .home-subtitle {
+    font-size: 1.2em;
+  }
+
+  .home-experience {
+    font-size: 1em;
+  }
+
+  /* Skills icons */
+  .skillsImg {
+    height: 70px;
+    padding: 8px;
+  }
+
+  /* Slideshow adjustments */
+  .hobby-slide figure {
+    padding: 1.5em 2em 4em 2em;
+    min-height: 400px;
+  }
+
+  .hobby-slide.portrait figure {
+    padding: 1.5em 2em 4em 2em;
+  }
+
+  .slide-nav {
+    font-size: 20px;
+    padding: 0.75em 0.5em;
+  }
+
+  .slide-nav.prev {
+    left: 5px;
+  }
+
+  .slide-nav.next {
+    right: 5px;
+  }
+
+  /* Construction badge */
+  .construction-badge {
+    width: 36px;
+    height: 36px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .construction-badge svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .construction-tooltip {
+    width: 200px;
+    bottom: 45px;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  /* Reduce base font size further */
+  body {
+    font-size: 16px;
+  }
+
+  /* Navigation - stack vertically */
+  header nav {
+    text-align: center;
+    padding-top: 0.5em;
+  }
+
+  header nav a {
+    padding: 0.5em 0.75em;
+    font-size: 0.85em;
+  }
+
+  nav span {
+    position: static;
+    display: block;
+    padding: 0.5em 0;
+  }
+
+  /* Info section - minimal side padding */
+  .info {
+    padding: 2em 1.5em;
+  }
+
+  footer.info {
+    padding: 0.5em 1.5em;
+  }
+
+  h3 {
+    margin-left: 0.5em;
+  }
+
+  /* Section headers */
+  .portion h2 {
+    font-size: 2em;
+    padding: 1em 0;
+  }
+
+  /* Home section */
+  #home h2 {
+    font-size: 2em;
+    padding: 1.5em 0 0.2em 0;
+  }
+
+  .home-subtitle {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding: 0.5em 1em 0.3em 1em;
+  }
+
+  .home-experience {
+    font-size: 0.9em;
+    padding: 0 1em 1em 1em;
+  }
+
+  /* Home photo */
+  .home-photo {
+    max-width: 150px;
+    margin-bottom: 1.5em;
+  }
+
+  /* Contact buttons - stack vertically */
+  .home-contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .contactButton {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contactButton a {
+    display: block;
+    padding: 0.75em 1em;
+  }
+
+  /* Skills icons */
+  .skillsImg {
+    height: 60px;
+    padding: 6px;
+  }
+
+  /* Slideshow - very compact */
+  .hobby-slide figure {
+    padding: 1em 1.5em 3.5em 1.5em;
+    min-height: 350px;
+  }
+
+  /* Force portrait slides to vertical layout on mobile */
+  .hobby-slide.portrait figure {
+    flex-direction: column;
+    padding: 1em 1.5em 3.5em 1.5em;
+  }
+
+  .hobby-slide.portrait figure img {
+    max-width: 100%;
+  }
+
+  .hobby-slide.portrait figcaption {
+    text-align: center;
+  }
+
+  .slide-nav {
+    font-size: 18px;
+    padding: 0.5em 0.4em;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .slide-nav.prev {
+    left: 2px;
+  }
+
+  .slide-nav.next {
+    right: 2px;
+  }
+
+  .slide-indicators {
+    bottom: 20px;
+    padding: 8px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Construction badge */
+  .construction-badge {
+    width: 32px;
+    height: 32px;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .construction-badge svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .construction-tooltip {
+    width: 180px;
+    bottom: 40px;
+    font-size: 0.7em;
+    padding: 6px 10px;
+  }
 }
