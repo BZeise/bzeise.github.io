@@ -19,6 +19,7 @@ body {
   font-family: 'Segoe UI', 'Roboto', -apple-system, sans-serif;
   font-size: 20px;
   overflow-x: hidden;
+  background: #f5f5f0;
 }
 
 * {
