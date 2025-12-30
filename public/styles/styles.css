@@ -18,10 +18,11 @@ body {
   padding: 0;
   font-family: 'Segoe UI', 'Roboto', -apple-system, sans-serif;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
-h3 {
-  margin-left: 1em;
+* {
+  box-sizing: border-box;
 }
 
 /* ==================== */
@@ -115,9 +116,9 @@ nav span {
 /* ==================== */
 
 #about + .info {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 3em 20%;
+  padding: 3em 2em;
 }
 
 #about + .info h3 {
@@ -174,8 +175,18 @@ nav span {
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+  padding: 0 0 0.3em 0;
+  text-shadow: 0 0 10px black;
+}
+
+.home-tagline {
+  color: white;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0;
   padding: 0 0 1em 0;
   text-shadow: 0 0 10px black;
+  opacity: 0.95;
 }
 
 .home-contact {
@@ -221,16 +232,16 @@ nav span {
 }
 
 .skill-category {
-  background: rgba(0, 0, 0, 0.3);
+  background: #e8e8e8;
   padding: 1.5em;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .skill-category:hover {
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #dcdcdc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Color tints for each category */
@@ -569,12 +580,29 @@ figcaption {
 /* ==================== */
 
 footer.info {
-  color: #fffaf0;
-  background: #777;
+  color: white;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("../images/brandon-griggs-cGJfCHmjiso-unsplash.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
-  padding: 0.1em 20%;
+  padding: 2em 20%;
   font-size: 0.95em;
   line-height: 1.6;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+footer.info a {
+  color: rgba(100, 180, 220, 1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer.info a:hover {
+  color: rgba(150, 210, 250, 1);
+  text-decoration: underline;
 }
 
 /* ==================== */
@@ -681,7 +709,7 @@ footer.info {
   }
 
   footer.info {
-    padding: 0.5em 10%;
+    padding: 1.5em 10%;
   }
 
   /* Section headers */
@@ -704,7 +732,28 @@ footer.info {
     font-size: 1em;
   }
 
-  /* Skills icons */
+  .home-tagline {
+    font-size: 0.95em;
+  }
+
+  /* Skills section - stack categories vertically */
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .skill-category {
+    padding: 1.25em;
+  }
+
+  .skill-category h3 {
+    font-size: 1.2em;
+  }
+
+  .skill-icons {
+    gap: 0.7em;
+  }
+
   .skillsImg {
     height: 70px;
     padding: 8px;
@@ -788,7 +837,7 @@ footer.info {
   }
 
   footer.info {
-    padding: 0.5em 1.5em;
+    padding: 1.5em 1.5em;
   }
 
   #about + .info h3 {
@@ -823,6 +872,11 @@ footer.info {
 
   .home-experience {
     font-size: 0.9em;
+    padding: 0 1em 0.2em 1em;
+  }
+
+  .home-tagline {
+    font-size: 0.85em;
     padding: 0 1em 1em 1em;
   }
 
@@ -852,12 +906,7 @@ footer.info {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   }
 
-  /* Skills section - stack categories vertically */
-  .skills-container {
-    grid-template-columns: 1fr;
-    gap: 1.5em;
-  }
-
+  /* Skills section - further reduce sizes for mobile */
   .skill-category {
     padding: 1em;
   }
