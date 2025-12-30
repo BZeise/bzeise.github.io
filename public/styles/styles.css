@@ -136,9 +136,40 @@ nav span {
   margin-top: 0;
 }
 
+#about + .info h3:nth-child(2) {
+  border-left-color: rgba(100, 180, 220, 0.7);
+}
+
+#about + .info h3:nth-child(4) {
+  border-left-color: rgba(80, 200, 120, 0.7);
+}
+
+#about + .info h3:nth-child(6) {
+  border-left-color: rgba(180, 120, 220, 0.7);
+}
+
+#about + .info h3:nth-child(8) {
+  border-left-color: rgba(255, 160, 80, 0.7);
+}
+
 #about + .info h3:hover {
-  border-left-color: rgba(100, 180, 220, 1);
   padding-left: 1.2em;
+}
+
+#about + .info h3:nth-child(2):hover {
+  border-left-color: rgba(100, 180, 220, 1);
+}
+
+#about + .info h3:nth-child(4):hover {
+  border-left-color: rgba(80, 200, 120, 1);
+}
+
+#about + .info h3:nth-child(6):hover {
+  border-left-color: rgba(180, 120, 220, 1);
+}
+
+#about + .info h3:nth-child(8):hover {
+  border-left-color: rgba(255, 160, 80, 1);
 }
 
 #about + .info p {
@@ -153,41 +184,77 @@ nav span {
 /* Home Section */
 /* ==================== */
 
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+  padding: 4.5em 0 2em 0;
+}
+
 #home h2 {
   font-family: 'Bernier', sans-serif;
   font-size: 5em;
-  letter-spacing: 0.05em;
-  padding: 0.6em 0 0.2em 0;
+  font-weight: normal;
+  letter-spacing: 0.07em;
+  padding: 0.2em 0.4em;
   margin: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0) 100%);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.home-intro {
+  max-width: 800px;
+  margin: 0 auto 2em auto;
+  padding: 0 2em;
+  text-align: center;
 }
 
 .home-subtitle {
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0;
-  padding: 0.5em 0 0.3em 0;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 10px black;
+  color: #333;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 0.8em 0;
+  padding-left: 1em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-left: 4px solid rgba(100, 180, 220, 0.7);
+  transition: border-left-color 0.3s ease;
+}
+
+.home-subtitle:hover {
+  border-left-color: rgba(100, 180, 220, 1);
 }
 
 .home-experience {
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0;
-  padding: 0 0 0.3em 0;
-  text-shadow: 0 0 10px black;
+  color: #444;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 0 0 0.8em 0;
+  padding-left: 1em;
+  line-height: 1.6;
+  border-left: 4px solid rgba(80, 200, 120, 0.7);
+  transition: border-left-color 0.3s ease;
+}
+
+.home-experience:hover {
+  border-left-color: rgba(80, 200, 120, 1);
 }
 
 .home-tagline {
-  color: white;
-  font-size: 1.1em;
-  font-weight: normal;
+  color: #666;
+  font-size: 1em;
+  font-weight: 300;
   margin: 0;
-  padding: 0 0 1em 0;
-  text-shadow: 0 0 10px black;
-  opacity: 0.95;
+  padding-left: 1em;
+  font-style: italic;
+  line-height: 1.5;
+  border-left: 4px solid rgba(180, 120, 220, 0.7);
+  transition: border-left-color 0.3s ease;
+}
+
+.home-tagline:hover {
+  border-left-color: rgba(180, 120, 220, 1);
 }
 
 .home-contact {
@@ -720,21 +787,25 @@ footer.info a:hover {
   }
 
   /* Home section */
+  #home {
+    min-height: 20vh;
+    padding: 4.5em 0 2.5em 0;
+  }
+
   #home h2 {
-    font-size: 3em;
-    padding: 1.2em 0 0.2em 0;
+    font-size: 4em;
   }
 
   .home-subtitle {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .home-experience {
-    font-size: 1em;
+    font-size: 1.05em;
   }
 
   .home-tagline {
-    font-size: 0.95em;
+    font-size: 0.98em;
   }
 
   /* Skills section - stack categories vertically */
@@ -812,6 +883,12 @@ footer.info a:hover {
   /* Navigation - stack vertically */
   header nav {
     text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding-top 0.5s ease-in-out;
+  }
+
+  header nav.nav-expanded {
     padding-top: 0.5em;
   }
 
@@ -823,7 +900,18 @@ footer.info a:hover {
   nav span {
     position: static;
     display: block;
-    padding: 0.5em 0;
+    padding: 0 0 0.3em 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+
+  header nav.nav-expanded span {
+    max-height: 3em;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* Info section - minimal side padding */
@@ -854,31 +942,30 @@ footer.info a:hover {
   }
 
   /* Home section */
-  #home h2 {
-    display: none;
+  #home {
+    min-height: 18vh;
+    padding: 4em 0 2em 0;
   }
 
-  #home {
-    padding-top: 4em;
-    background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.15) 100%),
-      url("../images/brandon-griggs-cGJfCHmjiso-unsplash.jpg");
+  #home h2 {
+    font-size: 3em;
+  }
+
+  .home-intro {
+    margin-bottom: 1.5em;
   }
 
   .home-subtitle {
     font-size: 1em;
-    letter-spacing: 0.05em;
-    padding: 0.5em 1em 0.3em 1em;
+    letter-spacing: 0.06em;
   }
 
   .home-experience {
-    font-size: 0.9em;
-    padding: 0 1em 0.2em 1em;
+    font-size: 0.95em;
   }
 
   .home-tagline {
-    font-size: 0.85em;
-    padding: 0 1em 1em 1em;
+    font-size: 0.9em;
   }
 
   /* Home photo */

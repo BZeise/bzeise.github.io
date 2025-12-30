@@ -145,10 +145,12 @@ $(document).scroll(function () {
       // $('nav a').addClass('small');
       // $('nav img').addClass('move');
       $('nav span').removeClass('movetext');
+      $('header nav').addClass('nav-expanded');
     } else {
       // $('nav a').removeClass('small');
       // $('nav img').removeClass('move');
       $('nav span').addClass('movetext');
+      $('header nav').removeClass('nav-expanded');
     }
 
 });
