@@ -27,6 +27,9 @@ function onReady() {
 
   // Initialize slideshow
   initSlideshow();
+
+  // Fetch and display last commit date
+  fetchLastCommitDate();
 }
 
 // Slideshow functionality
@@ -78,6 +81,11 @@ function initSlideshow() {
     // Update indicators
     indicators.removeClass('active');
     $(indicators[currentSlide]).addClass('active');
+
+    // Update border color based on slide index (cycle through 4 colors)
+    const colors = ['color-blue', 'color-green', 'color-purple', 'color-orange'];
+    const colorClass = colors[currentSlide % 4];
+    $('.slideshow-container').removeClass('color-blue color-green color-purple color-orange').addClass(colorClass);
   }
 
   // Next slide
@@ -154,3 +162,31 @@ $(document).scroll(function () {
     }
 
 });
+
+// Fetch last commit date from GitHub API
+function fetchLastCommitDate() {
+  // GitHub username and repo name
+  const username = 'BZeise';
+  const repo = 'bzeise.github.io';
+
+  // Fetch latest commit from GitHub API
+  fetch(`https://api.github.com/repos/${username}/${repo}/commits?per_page=1`)
+    .then(response => response.json())
+    .then(data => {
+      if (data && data[0] && data[0].commit) {
+        const commitDate = new Date(data[0].commit.author.date);
+        const formattedDate = commitDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+        $('#commit-date').text(formattedDate);
+      } else {
+        $('#commit-date').text('recently');
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching commit date:', error);
+      $('#commit-date').text('recently');
+    });
+}
