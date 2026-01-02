@@ -136,19 +136,19 @@ nav span {
   margin-top: 0;
 }
 
-#about + .info h3:nth-child(2) {
+#about + .info h3:nth-of-type(1) {
   border-left-color: rgba(100, 180, 220, 0.7);
 }
 
-#about + .info h3:nth-child(4) {
+#about + .info h3:nth-of-type(2) {
   border-left-color: rgba(80, 200, 120, 0.7);
 }
 
-#about + .info h3:nth-child(6) {
+#about + .info h3:nth-of-type(3) {
   border-left-color: rgba(180, 120, 220, 0.7);
 }
 
-#about + .info h3:nth-child(8) {
+#about + .info h3:nth-of-type(4) {
   border-left-color: rgba(255, 160, 80, 0.7);
 }
 
@@ -156,19 +156,19 @@ nav span {
   padding-left: 1.2em;
 }
 
-#about + .info h3:nth-child(2):hover {
+#about + .info h3:nth-of-type(1):hover {
   border-left-color: rgba(100, 180, 220, 1);
 }
 
-#about + .info h3:nth-child(4):hover {
+#about + .info h3:nth-of-type(2):hover {
   border-left-color: rgba(80, 200, 120, 1);
 }
 
-#about + .info h3:nth-child(6):hover {
+#about + .info h3:nth-of-type(3):hover {
   border-left-color: rgba(180, 120, 220, 1);
 }
 
-#about + .info h3:nth-child(8):hover {
+#about + .info h3:nth-of-type(4):hover {
   border-left-color: rgba(255, 160, 80, 1);
 }
 
